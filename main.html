@@ -3,7 +3,6 @@
     
     <head>
         <meta charset="utf-8">
-        <base href="D:/git_code/3DAlbum/images/">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="HandheldFriendly" content="true">
@@ -11,7 +10,7 @@
         />
         <meta name="description" content="程序员给女朋友用HTML5制作的3D相册，使用鼠标拖拽，能看到3D旋转效果，点击相片，相片能放大，移近。程序员发挥自己的专长，这是那些不懂编程的人望尘莫及的。本相册使用了HTML5的画布技术，需要谷歌浏览器或火狐浏览器等现代浏览器才能正常观看。">
         <meta name="keywords" content="canvas,3D,perspective,texturing,gallery">
-        <link rel="stylesheet" href="../3d-album/slider-wb.css">
+        <link rel="stylesheet" href="./3d-album/slider-wb.css">
         <title>
             HTML5制作的3D相册
         </title>
@@ -21,7 +20,7 @@
             #fff; width: 100%; height: 100%; } #canvas { position: absolute; width:
             100%; height: 100%; background: #fff; }
         </style>
-        <script src="../3d-album/ge1doot.js">
+        <script src="./3d-album/ge1doot.js">
         </script>
         <script>
             /* 
@@ -239,14 +238,14 @@
                     // --- load data ----
                     load: function(data) {
 
-                        ge1doot.loadJS("../3d-album/imageTransform3D.js", init, data);
+                        ge1doot.loadJS("./3d-album/imageTransform3D.js", init, data);
                     }
                 }
             })().load({
                 imgdata: [
                 // north
                 {
-                    img: "1.jpg",
+                    img: "./images/111.jpg",
                     x: -1000,
                     y: 0,
                     z: 1500,
@@ -254,7 +253,7 @@
                     nz: 1
                 },
                 {
-                    img: '2.jpg',
+                    img: './images/110.jpg',
                     x: 0,
                     y: 0,
                     z: 1500,
@@ -262,7 +261,7 @@
                     nz: 1
                 },
                 {
-                    img: '3.jpg',
+                    img: './images/109.jpg',
                     x: 1000,
                     y: 0,
                     z: 1500,
@@ -271,7 +270,7 @@
                 },
                 // east
                 {
-                    img: '4.jpg',
+                    img: './images/104.jpg',
                     x: 1500,
                     y: 0,
                     z: 1000,
@@ -279,7 +278,7 @@
                     nz: 0
                 },
                 {
-                    img: '5.jpg',
+                    img: './images/107.jpg',
                     x: 1500,
                     y: 0,
                     z: 0,
@@ -287,7 +286,7 @@
                     nz: 0
                 },
                 {
-                    img: '6.jpg',
+                    img: './images/099.jpg',
                     x: 1500,
                     y: 0,
                     z: -1000,
@@ -296,7 +295,7 @@
                 },
                 // south
                 {
-                    img: '7.jpg',
+                    img: './images/062.jpg',
                     x: 1000,
                     y: 0,
                     z: -1500,
@@ -304,7 +303,7 @@
                     nz: -1
                 },
                 {
-                    img: '8.jpg',
+                    img: './images/100.jpg',
                     x: 0,
                     y: 0,
                     z: -1500,
@@ -312,7 +311,7 @@
                     nz: -1
                 },
                 {
-                    img: '9.jpg',
+                    img: './images/089.jpg',
                     x: -1000,
                     y: 0,
                     z: -1500,
@@ -321,7 +320,7 @@
                 },
                 // west
                 {
-                    img: '10.jpg',
+                    img: './images/086.jpg',
                     x: -1500,
                     y: 0,
                     z: -1000,
@@ -329,7 +328,7 @@
                     nz: 0
                 },
                 {
-                    img: '11.jpg',
+                    img: './images/052.jpg',
                     x: -1500,
                     y: 0,
                     z: 0,
@@ -337,7 +336,7 @@
                     nz: 0
                 },
                 {
-                    img: '12.jpg',
+                    img: './images/026.jpg',
                     x: -1500,
                     y: 0,
                     z: 1000,
@@ -569,9 +568,9 @@
             </style>
         </div>
         
-        <script src='../3d-album/jquery-1.7.2.min.js'>
+        <script src='./3d-album/jquery-1.7.2.min.js'>
         </script>
-        <script src='../3d-album/util.js'>
+        <script src='./3d-album/util.js'>
         </script>
     </body>
 
